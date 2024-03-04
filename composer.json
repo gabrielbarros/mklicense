@@ -1,0 +1,25 @@
+{
+    "name": "gabrielbarros/mklicense",
+    "description": "Generate a license file for your projects",
+    "keywords": ["dev", "license"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Barros",
+            "email": "gabriel@gsdb.net"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "ext-readline": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "GabrielBarros\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "bin": ["bin/mklicense"]
+}

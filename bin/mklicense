@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+if (isset($_composer_autoload_path)) {
+    require $_composer_autoload_path;
+} else {
+    require dirname(realpath($argv[0])) . '/../vendor/autoload.php';
+}
+
+$mklicense = new \GabrielBarros\Mklicense();
+$mklicense->exec($argv);
